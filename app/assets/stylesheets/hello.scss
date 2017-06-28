@@ -1,0 +1,53 @@
+// Place all the styles related to the Hello controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.circle {
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+    font-size: 50px;
+}
+
+/* Create the animation blocks */
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+
+
+
+/* Spinning, gradient circle; CSS only! */
+#advanced {
+	width: 150px;
+	height: 150px;
+	
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
+	background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+	
+	animation-name: spin; 
+	animation-duration: 3s; /* 3 seconds */
+	animation-iteration-count: infinite; 
+	animation-timing-function: linear;
+}
+
+h1{
+    text-align : center;
+    color: rgba(255,255,255,1);
+    font-size: 50px;
+}
+
+.box1{
+      background: rgba(255,255,255,0.3);
+      margin-top: 100px;
+      padding: 30px;
+      position: relative;
+    }
+

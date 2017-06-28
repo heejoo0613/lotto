@@ -1,0 +1,26 @@
+<style type="text/css">
+ 
+    body {
+        background:url(/assets/poro.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+ 
+</style>
+
+<h1>
+    오늘의 로또!
+</h1>
+
+
+<div class="box1">
+    <center><div class="container" >
+        
+        <% @lotto.each do |number| %>
+            <div id="advanced" class="circle"><%= number %></div>
+        <% end %>
+    
+    </center></div>
+</div>
